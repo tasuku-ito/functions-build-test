@@ -4,4 +4,3 @@ steps:
   dir: 'bin'
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', 'cloud-build-test-function', '--runtime', '--trigger-http', '--entry-point=main', '--runtime=python37', '--source=src']
-  dir: 'src'
