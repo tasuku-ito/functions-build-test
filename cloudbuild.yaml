@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/google-appengine/python'
+- name: 'docker.io/library/python:3.7'
   args: ['bash', 'test.sh']
   dir: 'bin'
 - name: 'gcr.io/cloud-builders/gcloud'
