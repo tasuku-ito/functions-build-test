@@ -1,6 +1,5 @@
 steps:
 - name: 'docker.io/library/python:3.7'
-  args: ['bash', 'test.sh']
-  dir: 'bin'
+  args: ['bash', 'bin/test.sh']
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', 'cloud-build-test-function', '--runtime', '--trigger-http', '--entry-point=main', '--runtime=python37', '--source=src']
